@@ -7,7 +7,7 @@ guessed = []
 print("=========================")
 print("|        HANGMAN        |")
 print("=========================")
-print(f"\t\t\tAttempts: {attempts}")
+print(f"\tAttempts: {attempts}")
 print("-------------------------")
 print("_ " * len(secret_word))
 print("\n")
@@ -24,7 +24,7 @@ while attempts > 0:
         attempts -= 1
         print("-------------------------")
         print("Wrong guess... Try again")
-        print(f"\t\t\tAttempts: {attempts}")
+        print(f"\tAttempts: {attempts}")
         print("-------------------------")
 
     #replacing blank spaces with guessed letters
