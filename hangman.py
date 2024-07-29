@@ -26,3 +26,24 @@ while attempts > 0:
         print("Wrong guess... Try again")
         print(f"\t\t\tAttempts: {attempts}")
         print("-------------------------")
+
+    #replacing blank spaces with guessed letters
+    current_status = " "
+    for char in secret_word:
+        if char in guessed:
+            current_status += char + " "
+        else:
+            current_status += "_ "
+    print(current_status)
+
+    if "_" not in current_status:
+        print("========================")
+        print("        CONGRATS!       ")
+        print(" You guessed the word :)")
+        print("========================")
+        break
+    if attempts == 0:
+        print("========================")
+        print("        YOU LOSE!       ")
+        print("========================")
+        print(f"The secret word was: {secret_word}")
